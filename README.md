@@ -1,7 +1,6 @@
-# T5VQVAE
-Transformer-based VQVAE for text generation
+### Improving Semantic Control in Discrete Latent Spaces with Transformer Quantized Variational Autoencoders
 
-## Training model:
+#### Training model:
 ```python
 train_t5.py
 
