@@ -1,4 +1,4 @@
-EACL2024: Improving Semantic Control in Discrete Latent Spaces with Transformer Quantized Variational Autoencoders [link](https://arxiv.org/abs/2402.00723#:~:text=Experimental%20results%20indicate%20that%20T5VQVAE,%2C%20text%20transfer%2C%20and%20inference.)
+EACL2024 Finding: Improving Semantic Control in Discrete Latent Spaces with Transformer Quantized Variational Autoencoders [link](https://arxiv.org/abs/2402.00723#:~:text=Experimental%20results%20indicate%20that%20T5VQVAE,%2C%20text%20transfer%2C%20and%20inference.)
 ```latex
 @inproceedings{Zhang2024ImprovingSC,
   title={Improving Semantic Control in Discrete Latent Spaces with Transformer Quantized Variational Autoencoders},
