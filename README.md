@@ -22,9 +22,9 @@ disentangled_vqvae = False # if true, different codebooks for different semantic
 ema = True
 
 # data_dict (line 238)
-task =
-  'recon', # explanation recon
-  'math_recon', # math expression recon
-  'math_inf' # math derivation,
-  'inference_com' # syllogistic deductive NLI (currently, the annotation is unavailable online)
+train_data_file = 'datasets/full/WorldTree/explanations_tr.txt'
+test_data_file = 'datasets/full/WorldTree/explanations_te.txt'
+task = 'recon'
 ```
+
+checkpoints for T5VQVAE(base)
