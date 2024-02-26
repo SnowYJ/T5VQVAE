@@ -10,7 +10,6 @@ import t5.load_flan_t5 as flan_t5
 import t5.load_data as data
 import argparse
 from t5.utils import frange_cycle_zero_linear, create_srl_vocab
-from train_dvae import build_model
 from vqvae.vqvae import VectorQuantizer, VectorQuantizerEMA
 import pickle
 import logging
@@ -303,9 +302,8 @@ def main():
         model = t5.load_t5_ae(model_args, training_args) if args.load_pretrain_t5 else t5.new_t5_ae(model_args, training_args)
 
     elif model_args.latent_type == 'T5_dvae':
-        model_dvae, _ = build_model(args.dvae_name, config_file=args.config_file, device=args.device)
-        model = t5.load_t5_dvae(model_args, training_args, model_dvae, load_model='T5') if args.load_pretrain_t5 else t5.new_t5_dvae(model_args, training_args, model_dvae)
-
+        pass
+        
     elif model_args.latent_type == 'T5_vqvae':
         # model_vqvae = VectorQuantizer(num_embeddings=512, embedding_dim=768, commitment_cost=0.25)
         dimension_dict = {"V": (0, 1000), "residual": (1000, args.code_book_size)}
