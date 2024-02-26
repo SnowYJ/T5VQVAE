@@ -7,7 +7,7 @@ EACL2024 Finding: Improving Semantic Control in Discrete Latent Spaces with Tran
   url={https://api.semanticscholar.org/CorpusID:267365107}
 }
 ```
-#### Training model:
+#### Training/evaluating model:
 ```python
 train_t5.py
 
@@ -26,5 +26,6 @@ train_data_file = 'datasets/full/WorldTree/explanations_tr.txt'
 test_data_file = 'datasets/full/WorldTree/explanations_te.txt'
 task = 'recon'
 ```
+#### Checkpoint:
 
-checkpoints for T5VQVAE(base)
+[checkpoints for T5VQVAE(base)](https://drive.google.com/drive/folders/1RfKr1RvMXuaJICzjYKqqpnaeAU_rCH3W?usp=sharing)
