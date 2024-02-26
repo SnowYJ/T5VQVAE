@@ -12,15 +12,11 @@ EACL2024 Finding: Improving Semantic Control in Discrete Latent Spaces with Tran
 train_t5.py
 
 # model_dict (line 225)
-t5_model_name = 't5-small', 't5-base', 'google/flan-t5-base'
+t5_model_name = 't5-base'
 
-ae_latent_size =
-  256, # t5-small
-  768 # t5-base
+ae_latent_size = 768
 
-latent_type =
-  'T5_original', # vanilla T5
-  'T5_vqvae' # our architecture
+latent_type = 'T5_vqvae'
 
 disentangled_vqvae = False # if true, different codebooks for different semantic roles.
 ema = True
